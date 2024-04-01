@@ -3,12 +3,12 @@ P ZX
 
 RN
 
-U integer_functions_iter%b  integer_functions_iter.adb  bf06e24b NE OO PK
+U integer_functions_iter%b  integer_functions_iter.adb  b8ba1ad5 NE OO PK
 
 U integer_functions_iter%s  integer_functions_iter.ads  3a13eeef EE NE OO PK
 
 D integer_functions_iter.ads  20240401133833 3a13eeef integer_functions_iter%s
-D integer_functions_iter.adb  20240401140743 85150ca4 integer_functions_iter%b
+D integer_functions_iter.adb  20240401163111 82a9f43a integer_functions_iter%b
 D system.ads		20240202103600 426dafb8 system%s
 G a e
 G c Z s b [factorial integer_functions_iter 5 18 none]
@@ -28,7 +28,7 @@ X 1 integer_functions_iter.ads
 6i35 y{integer} 2|16b35 20r22
 7V18*Solve_Dio{2R14} 7>28 7>41 2|34b18 56t12
 7i28 x{integer} 2|34b28 37r22
-7i41 y{integer} 2|34b41 38r22 43r23
+7i41 y{integer} 2|34b41 38r22
 X 2 integer_functions_iter.adb
 3i17 result{integer} 8m25 10m33 10r43 12r32
 9i29 k{integer} 10r52
@@ -36,7 +36,7 @@ X 2 integer_functions_iter.adb
 17i20 v{integer} 20m17 21r24 23r30 24m25 26r23 27r36 28r30 29m25
 17i23 r{integer} 22m25 24r30 27m25 29r30
 35i17 u{integer} 37m17 44r30 45r30 52m25 55r33
-35i20 v{integer} 38m17 44r34 45r36 52r30 53m25
+35i20 v{integer} 38m17 43r23 44r34 45r36 52r30 53m25
 35i23 s1{integer} 39m17 46r34 48m25 55r25
 35i27 s2{integer} 40m17 46r43 48r31 49m25
 35i31 new_s{integer} 46m25 49r31

@@ -24,7 +24,7 @@ package body Integer_Functions_Iter is
 			v := r;
 		end if;
 		while v /= 0 loop
-			r := u mod v;
+			r := u rem v;
 			u := v;
 			v := r;
 		end loop;
@@ -40,9 +40,9 @@ package body Integer_Functions_Iter is
 		s2 := 0;
 		t1 := 0;
 		t2 := 1;
-		while y /= 0 loop
+		while v /= 0 loop
 			q := u / v;
-			r := u mod v;
+			r := u rem v;
 			new_s := s1 - q * s2;
 			new_t := t1 - q * t2;
 			s1 := s2;

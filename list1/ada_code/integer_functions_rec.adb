@@ -13,7 +13,7 @@ package body Integer_Functions_Rec is
 		if y = 0 then
 			return x;
 		else
-			return GCD(y, x mod y);
+			return GCD(y, x rem y);
 		end if;
 	end;
 
@@ -25,7 +25,7 @@ package body Integer_Functions_Rec is
 			return (1, 0, x);
 		else
 			q := x / y;
-			r := x mod y;
+			r := x rem y;
 			prev := Solve_Dio(y, r);
 			return (prev.b, prev.a - q * prev.b, prev.c);
 		end if;
