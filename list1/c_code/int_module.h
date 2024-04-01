@@ -8,7 +8,7 @@ typedef struct {
 } DiophantineSolution;
 
 unsigned long factorial(unsigned int n);
-unsigned int gcd(unsigned int a, unsigned int b);
+unsigned int gcd(unsigned int x, unsigned int y);
 DiophantineSolution solve_dio(int x, int y);
 
 #endif

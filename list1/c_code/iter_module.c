@@ -1,4 +1,4 @@
-#include "iter_module.h"
+#include "int_module.h"
 
 unsigned long factorial(unsigned int n) {
 	if (n == 0) {
@@ -21,23 +21,30 @@ unsigned int gcd(unsigned int x, unsigned int y) {
 		y = temp;
 	}
 	while (y != 0) {
-		unsigned int remainder = x % y;
+		unsigned int r = x % y;
 		x = y;
-		y = remainder;
+		y = r;
 	}
 	return x;
 }
 
 DiophantineSolution solve_dio(int x, int y) {
-	if (x < y) {
-		unsigned int temp = x;
-		x = y;
-		y = temp;
-	}
+	int s1 = 1;
+	int s2 = 0;
+	int t1 = 0;
+	int t2 = 1;
 	while (y != 0) {
-		unsigned int remainder = x % y;
+		int q = x / y;
+		int r = x % y;
+		int new_s = s1 - q * s2;
+		int new_t = t1 - q * t2;
+		s1 = s2;
+		s2 = new_s;
+		t1 = t2;
+		t2 = new_t;
 		x = y;
-		y = remainder;
+		y = r;
 	}
-	unsigned int tem
+	DiophantineSolution solution = {.a = s1, .b = t1, .c = x};
+	return solution;
 }
