@@ -1,0 +1,48 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+
+U integer_functions_iter%b  integer_functions_iter.adb  bf06e24b NE OO PK
+
+U integer_functions_iter%s  integer_functions_iter.ads  3a13eeef EE NE OO PK
+
+D integer_functions_iter.ads  20240401133833 3a13eeef integer_functions_iter%s
+D integer_functions_iter.adb  20240401140743 85150ca4 integer_functions_iter%b
+D system.ads		20240202103600 426dafb8 system%s
+G a e
+G c Z s b [factorial integer_functions_iter 5 18 none]
+G c Z s b [gcd integer_functions_iter 6 18 none]
+G c Z s b [solve_dio integer_functions_iter 7 18 none]
+G c Z s s [diophantine_solutionIP integer_functions_iter 2 14 none]
+X 1 integer_functions_iter.ads
+1K9*Integer_Functions_Iter 8l5 8e27 2|1b14 57l5 57t27
+2R14*Diophantine_Solution 4e19 7r61 2|34r61
+3i17*a{integer}
+3i20*b{integer}
+3i23*c{integer}
+5V18*Factorial{integer} 5>28 2|2b18 14t12
+5i28 n{integer} 2|2b28 5r20 8r35 9r48
+6V18*GCD{integer} 6>22 6>35 2|16b18 32t12
+6i22 x{integer} 2|16b22 19r22
+6i35 y{integer} 2|16b35 20r22
+7V18*Solve_Dio{2R14} 7>28 7>41 2|34b18 56t12
+7i28 x{integer} 2|34b28 37r22
+7i41 y{integer} 2|34b41 38r22 43r23
+X 2 integer_functions_iter.adb
+3i17 result{integer} 8m25 10m33 10r43 12r32
+9i29 k{integer} 10r52
+17i17 u{integer} 19m17 21r20 22r30 23m25 27r30 28m25 31r24
+17i20 v{integer} 20m17 21r24 23r30 24m25 26r23 27r36 28r30 29m25
+17i23 r{integer} 22m25 24r30 27m25 29r30
+35i17 u{integer} 37m17 44r30 45r30 52m25 55r33
+35i20 v{integer} 38m17 44r34 45r36 52r30 53m25
+35i23 s1{integer} 39m17 46r34 48m25 55r25
+35i27 s2{integer} 40m17 46r43 48r31 49m25
+35i31 new_s{integer} 46m25 49r31
+35i38 t1{integer} 41m17 47r34 50m25 55r29
+35i42 t2{integer} 42m17 47r43 50r31 51m25
+35i46 new_t{integer} 47m25 51r31
+35i53 q{integer} 44m25 46r39 47r39
+35i56 r{integer} 45m25 53r30
+
