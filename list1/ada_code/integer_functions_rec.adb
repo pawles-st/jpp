@@ -17,7 +17,7 @@ package body Integer_Functions_Rec is
 		end if;
 	end;
 
-	Function Solve_Dio(x : Integer; Y : Integer) return Diophantine_Solution is
+	Function Solve_Dio(x : Integer; y : Integer) return Diophantine_Solution is
 		q, r : Integer;
 		prev : Diophantine_Solution;
 	begin
