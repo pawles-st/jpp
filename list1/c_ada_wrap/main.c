@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include <assert.h>
-#include "datatype.h"
+#include "int_module.h"
 
 #define FACT_TEST_LEN 11
 #define GCD_TEST_LEN 3
 #define DIO_TEST_LEN 6
-
-extern int factorial(int n);
-extern int gcd(int x, int y);
-extern DiophantineSolution solve_dio(int x, int y);
 
 int main() {
 
@@ -45,5 +41,4 @@ int main() {
 			assert(solution.c == dio_values[i].c);
 		}
 	}
-
 }
