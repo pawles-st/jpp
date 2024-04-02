@@ -1,0 +1,29 @@
+V "GNAT Lib v13"
+P ZX
+
+RN
+
+U integer_functions_rec%s  integer_functions_rec.ads  a5c6d6e5 NE OO PK
+
+D integer_functions_rec.ads  20240402110611 a5c6d6e5 integer_functions_rec%s
+D system.ads		20240202103600 426dafb8 system%s
+G a e
+G c Z s s [factorial integer_functions_rec 5 18 none]
+G c Z s s [gcd integer_functions_rec 6 18 none]
+G c Z s s [solve_dio integer_functions_rec 7 18 none]
+G c Z s s [diophantine_solutionIP integer_functions_rec 2 14 none]
+X 1 integer_functions_rec.ads
+1K9*Integer_Functions_Rec 12l5 12e26
+2R14*Diophantine_Solution 4e19 7r61
+3i17*a{integer}
+3i20*b{integer}
+3i23*c{integer}
+5V18*Factorial{integer} 5>28 9b<c,factorial>26
+5i28 n{integer}
+6V18*GCD{integer} 6>22 6>35 10b<c,gcd>26
+6i22 x{integer}
+6i35 y{integer}
+7V18*Solve_Dio{2R14} 7>28 7>41 11b<c,solve_dio>26
+7i28 x{integer}
+7i41 y{integer}
+

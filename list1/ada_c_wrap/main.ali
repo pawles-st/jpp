@@ -1,0 +1,103 @@
+V "GNAT Lib v13"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U main%b		main.adb		1a7975dc NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W integer_functions_rec%s  integer_functions_rec.ads  integer_functions_rec.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+
+D ada.ads		20240202103600 76789da1 ada%s
+D a-assert.ads		20240202103600 ba465f5c ada.assertions%s
+D a-except.ads		20240202103600 2a7d8d70 ada.exceptions%s
+D a-ioexce.ads		20240202103600 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20240202103600 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20240202103600 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20240202103600 711e0174 ada.numerics.big_numbers.big_integers_ghost%s
+D a-stream.ads		20240202103600 119b8fb3 ada.streams%s
+D a-string.ads		20240202103600 90ac6797 ada.strings%s
+D a-sttebu.ads		20240202103600 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240202103600 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240202103600 9eaa38c6 ada.tags%s
+D a-textio.ads		20240202103600 5c2c6153 ada.text_io%s
+D a-unccon.ads		20240202103600 0e9b276f ada.unchecked_conversion%s
+D integer_functions_rec.ads  20240402110611 a5c6d6e5 integer_functions_rec%s
+D interfac.ads		20240202103600 15f799c2 interfaces%s
+D i-cstrea.ads		20240202103600 e53d8b8e interfaces.c_streams%s
+D main.adb		20240402110302 e393c26a main%b
+D system.ads		20240202103600 426dafb8 system%s
+D s-assert.ads		20240202103600 9c4520c7 system.assertions%s
+D s-casuti.ads		20240202103600 cf13d755 system.case_util%s
+D s-conca6.ads		20240202103600 8252f108 system.concat_6%s
+D s-crtl.ads		20240202103600 8a0692f8 system.crtl%s
+D s-exctab.ads		20240202103600 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240202103600 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20240202103600 c707dfd0 system.image_i%s
+D s-imgint.ads		20240202103600 d4a52a9b system.img_int%s
+D s-parame.ads		20240202103600 d494a4a6 system.parameters%s
+D s-putima.ads		20240202103600 17291fe4 system.put_images%s
+D s-secsta.ads		20240202103600 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240202103600 df77073e system.soft_links%s
+D s-stache.ads		20240202103600 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240202103600 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240202103600 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20240202103600 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20240202103600 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240202103600 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20240202103600 1f610d7a system.val_int%s
+D s-valuns.ads		20240202103600 e8a1f424 system.val_uns%s
+D s-valuti.ads		20240202103600 fcd603d8 system.val_util%s
+D s-valuei.ads		20240202103600 11081e09 system.value_i%s
+D s-vaispe.ads		20240202103600 44130d39 system.value_i_spec%s
+D s-valueu.ads		20240202103600 18770347 system.value_u%s
+D s-vauspe.ads		20240202103600 a67b2f28 system.value_u_spec%s
+D s-wchcon.ads		20240202103600 d9032363 system.wch_con%s
+D s-widuns.ads		20240202103600 866a5800 system.wid_uns%s
+D s-widthu.ads		20240202103600 b32f15e2 system.width_u%s
+G a e
+G c Z b b [main standard 4 11 none]
+G r c none [main standard 4 11 none] [factorial integer_functions_rec 5 18 none]
+G r c none [main standard 4 11 none] [gcd integer_functions_rec 6 18 none]
+G r c none [main standard 4 11 none] [solve_dio integer_functions_rec 7 18 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 1r23
+X 13 a-textio.ads
+58K13*Text_IO 787e16 18|1w10 1r27
+566U14*Put_Line 18|16s33 32s33 48s33
+X 15 integer_functions_rec.ads
+1K9*Integer_Functions_Rec 12e26 18|2w6 2r33
+2R14*Diophantine_Solution 4e19 18|6r55 43r30
+3i17*a{integer} 18|48r129 48r243
+3i20*b{integer} 18|48r159 48r276
+3i23*c{integer} 18|48r189 48r309
+5V18*Factorial{integer} 18|14s40
+6V18*GCD{integer} 18|30s39
+7V18*Solve_Dio{2R14} 18|46s39
+X 18 main.adb
+4U11*Main 4b11 53l5 53t9
+5A14 Int_Array(integer)<integer> 10r40 24r39 25r37 26r37 41r37 42r37
+6A14 Dio_Array(15|2R14)<integer> 40r39
+9i17 FACT_TEST_LEN{integer} 10r56 13r31
+10a17 fact_values{5A14} 15r43 16r169
+11i17 fact_result{integer} 14m25 15r28 16r122
+13i21 i{integer} 14r50 15r55 16r92 16r181
+23i17 GCD_TEST_LEN{integer} 24r55 25r53 26r53 29r31
+24a17 gcd_values{5A14} 31r42 32r162
+25a17 x_values{5A14} 30r43
+26a17 y_values{5A14} 30r56
+27i17 gcd_result{integer} 30m25 31r28 32r116
+29i21 i{integer} 30r52 30r65 31r53 32r86 32r173
+38i17 DIO_TEST_LEN{integer} 40r55 41r53 42r53 45r31
+40a17 dio_values{6A14} 47r42 48r229 48r262 48r295
+41a17 x_values{5A14} 46r49
+42a17 y_values{5A14} 46r62
+43r17 dio_result{15|2R14} 46m25 47r28 48r118 48r148 48r178
+45i21 i{integer} 46r58 46r71 47r53 48r86 48r240 48r273 48r306
+
