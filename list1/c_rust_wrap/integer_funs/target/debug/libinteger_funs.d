@@ -1,0 +1,1 @@
+/mnt/userdata/learning/jpp/list1/c_rust_wrap/integer_funs/target/debug/libinteger_funs.a: /mnt/userdata/learning/jpp/list1/c_rust_wrap/integer_funs/src/lib.rs /mnt/userdata/learning/jpp/list1/c_rust_wrap/integer_funs/src/rec_module/mod.rs
