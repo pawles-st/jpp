@@ -8,7 +8,7 @@ class DivideByZeroException : public std::runtime_error {
 		DivideByZeroException(const std::string& what_arg) : std::runtime_error(what_arg) {}
 };
 
-using mod_type = long;
+using mod_type = unsigned long;
 
 template<mod_type p>
 class GF {
@@ -20,7 +20,13 @@ class GF {
 		GF() : value(0) {}
 
 		// value constructor - value is specified by user
-		GF(mod_type v) : value(mod(v)) {}
+		GF(long v) : value(mod(v)) {}
+
+		/// --- CONVERSION OPERATORS ---
+
+		operator unsigned long() const {
+			return this->value;
+		}
 
 		/// --- COMPARISON OPERATORS ---
 
@@ -47,7 +53,7 @@ class GF {
 		};
 		GF<p> inverse() const {
 			if (this->value == 0) {
-				throw DivideByZeroException("Division by zero");
+				throw DivideByZeroException("Cannot invert a zero element");
 			} else {
 				DiophantineSolution solution = solve_dio(p, this->value);
 				return GF<p>(solution.b);
@@ -58,19 +64,23 @@ class GF {
 
 		GF<p>& operator=(const GF<p>& rhs) {
 			this->value = rhs.value;
-			return this;
+			return *this;
 		};
 		GF<p>& operator+=(const GF<p>& rhs) {
 			*this = *this + rhs;
+			return *this;
 		};
 		GF<p>& operator-=(const GF<p>& rhs) {
 			*this = *this - rhs;
+			return *this;
 		};
 		GF<p>& operator*=(const GF<p>& rhs) {
 			*this = *this * rhs;
+			return *this;
 		};
 		GF<p>& operator/=(const GF<p>& rhs) {
 			*this = *this / rhs;
+			return *this;
 		};
 
 		/// --- HELPER METHODS ---
@@ -101,8 +111,8 @@ class GF {
 				return DiophantineSolution{prev.b, prev.a - q * prev.b, prev.c};
 			}
 		};
-		static mod_type mod(mod_type value) {
-			return (value % p + p) % p;
+		static mod_type mod(long value) {
+			return (value % static_cast<long>(p) + p) % p;
 		};
 };
 
