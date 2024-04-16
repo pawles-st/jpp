@@ -5,5 +5,6 @@ const unsigned int p = 1234577;
 
 int main() {
 	GF<p> a(1);
-	GF<p> b(1);
+	GF<p> b(2);
+	std::cout << a / b;
 }
