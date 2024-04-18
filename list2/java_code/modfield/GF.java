@@ -1,7 +1,3 @@
-package modfield;
-
-import modfield.InvalidFieldCharacteristicException;
-
 public class GF implements Comparable<GF> {
 
 	public GF(final long p) {
@@ -9,7 +5,7 @@ public class GF implements Comparable<GF> {
 			this.p = p;
 			this.value = 0;
 		} else {
-			throw InvalidFieldCharacteristicException("Characteristic has to be positive");
+			throw new InvalidFieldCharacteristicException("Characteristic has to be positive");
 		}
 	}
 
@@ -18,7 +14,7 @@ public class GF implements Comparable<GF> {
 			this.p = p;
 			this.value = value % p;
 		} else {
-			throw InvalidFieldCharacteristicException("Characteristic has to be positive");
+			throw new InvalidFieldCharacteristicException("Characteristic has to be positive");
 		}
 	}
 
@@ -30,7 +26,7 @@ public class GF implements Comparable<GF> {
 			if (this.getCharacteristic() == rhs.getCharacteristic()) {
 				return Long.compare(this.getValue(), rhs.getValue());
 			}
-			throw InvalidFieldCharacteristicException("Characteristics of the provided GF objects differ");
+			throw new InvalidFieldCharacteristicException("Characteristics of the provided GF objects differ");
 		} else {
 			throw new IllegalArgumentException("Rhs cannot be null");
 		}
@@ -85,7 +81,7 @@ public class GF implements Comparable<GF> {
 		return this.value;
 	}
 	
-	public long setValue(final long value) {
+	public void setValue(final long value) {
 		this.value = value;
 	}
 

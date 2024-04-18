@@ -1,5 +1,3 @@
-package modfield;
-
 import java.io.NotSerializableException;
 
 @SuppressWarnings("serial")
