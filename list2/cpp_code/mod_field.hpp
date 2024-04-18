@@ -52,11 +52,11 @@ class GF {
 			return *this * rhs.inverse();
 		};
 		GF<p> inverse() const {
-			if (this->value == 0) {
-				throw DivideByZeroException("Cannot invert a zero element");
-			} else {
+			if (this->value != 0) {
 				DiophantineSolution solution = solve_dio(p, this->value);
 				return GF<p>(solution.b);
+			} else {
+				throw DivideByZeroException("Cannot invert a zero element");
 			}
 		};
 
