@@ -20,7 +20,7 @@ class GF {
 		GF() : value(0) {}
 
 		// value constructor - value is specified by user
-		GF(long v) : value(mod(v)) {}
+		GF(const long v) : value(mod(v)) {}
 
 		/// --- CONVERSION OPERATORS ---
 
