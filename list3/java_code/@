@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.function.Function;
+
+public class DHSetup <T extends ModField> {
+	public DHSetup(Function<Long, T> constructor) {
+		this.constructor = constructor;
+
+		long q = T.getCharacteristic() - 1;
+		ArrayList<Long> primeDivisors = DHSetup.findPrimeDivisors(q);
+		
+		Random rng = new Random();
+		T g;
+		do {
+			g = this.constructor.apply(rng.nextLong(T.characteristic - 3) + 2);
+		} while (!DHSetup.isGenerator(g, primeDivisors));
+	}
+
+	private Function<Long, T> constructor;
+	private T generator;
+
+	private ArrayList<Long> findPrimeDivisors(long q) {
+		ArrayList<Long> divisors;
+		for (long x = 2; q > 1; ++x) {
+			if (q % x == 0) {
+				divisors.add(x);
+				do {
+					q /= x;
+				} while (q % x == 0);
+			}
+		}
+		return divisors;
+	}
+
+	private boolean isGenerator(final T g, final ArrayList<Long> divisors) {
+		for (long p : divisors) {
+			if (DHSetup.power(g, (T.getCharacteristic() - 1) / p).compareTo(contructor.apply(1)) == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+}
