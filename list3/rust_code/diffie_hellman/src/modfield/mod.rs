@@ -6,7 +6,7 @@ pub enum GFError {
     DivideByZero,
 }
 
-type ModType = u64;
+pub type ModType = u64;
 
 struct DiophantineSolution {
     a: i64,
@@ -14,36 +14,47 @@ struct DiophantineSolution {
     c: ModType,
 }
 
+pub trait ModField<T: Clone + Copy + Eq + Ord>: Clone + Copy + Eq + Ord + Add<Output = T> + Sub<Output = T> + Mul<Output = T> + Div<Output = Result<T, GFError>> {
+    fn new() -> Self;
+    fn from_i64(v: i64) -> Self;
+    fn to_i64(&self) -> i64;
+    fn from_u64(v: u64) -> Self;
+    fn to_u64(&self) -> u64;
+    fn get_characteristic() -> ModType;
+}
+
 #[derive(PartialEq, Eq, PartialOrd, Ord, Clone, Copy, Debug)]
 pub struct GF<const P: ModType> {
     value: ModType,
 }
 
-impl<const P: ModType> GF<P> {
-    pub fn new() -> Self {
+impl<const P: ModType> ModField<GF::<P>> for GF::<P> {
+    fn new() -> Self {
         return GF::<P>{value: 0};
     }
-
-    pub fn from_i64(v: i64) -> Self {
+    
+    fn from_i64(v: i64) -> Self {
         return GF::<P>{value: GF::<P>::modulo(v)};
     }
 
-    pub fn to_i64(&self) -> i64 {
+    fn to_i64(&self) -> i64 {
         return self.value as i64;
     }
     
-    pub fn from_u64(v: u64) -> Self {
+    fn from_u64(v: u64) -> Self {
         return GF::<P>{value: v % P};
     }
 
-    pub fn to_u64(&self) -> u64 {
+    fn to_u64(&self) -> u64 {
         return self.value;
     }
 
-    pub fn get_characteristic(&self) -> ModType {
+    fn get_characteristic() -> ModType {
         return P;
     }
-    
+}
+
+impl<const P: ModType> GF<P> { 
     pub fn get_value(&self) -> ModType {
         return self.value;
     }

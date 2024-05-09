@@ -21,7 +21,7 @@ class DHSetup {
 		}
 
 		T getGenerator() const {
-			return generator;
+			return this->generator;
 		}
 
 		static T power(T a, mod_type b) {
