@@ -1,0 +1,140 @@
+V "GNAT Lib v14"
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLICIT_LOOPS
+RV MAX_TASK_ENTRIES=1
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U philosophers%b	philosophers.adb	ba15679c NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.atomic_primitives%s  s-atopri.adb	s-atopri.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U philosophers%s	philosophers.ads	bd3c6c7d EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20240522120902 76789da1 ada%s
+D a-except.ads		20240522120902 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240522120902 bf4f806b ada.finalization%s
+D a-ioexce.ads		20240522120902 40018c65 ada.io_exceptions%s
+D a-reatim.ads		20240522120902 d11673fd ada.real_time%s
+D a-stream.ads		20240522120902 119b8fb3 ada.streams%s
+D a-string.ads		20240522120902 90ac6797 ada.strings%s
+D a-sttebu.ads		20240522120902 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240522120902 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240522120902 9eaa38c6 ada.tags%s
+D a-textio.ads		20240522120902 34ef47de ada.text_io%s
+D a-unccon.ads		20240522120902 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240522120902 9111f9c1 interfaces%s
+D i-c.ads		20240522120902 aac316ce interfaces.c%s
+D i-cstrea.ads		20240522120902 ffd01b9d interfaces.c_streams%s
+D philosophers.ads	20240605201220 bd3c6c7d philosophers%s
+D philosophers.adb	20240605202211 33c64c3f philosophers%b
+D system.ads		20240522120902 14286b0f system%s
+D s-atacco.ads		20240522120902 5868e3ba system.address_to_access_conversions%s
+D s-atopri.ads		20240522120902 e19c1d89 system.atomic_primitives%s
+D s-conca3.ads		20240522120902 8a7a19a2 system.concat_3%s
+D s-conca4.ads		20240522120902 33f85f3e system.concat_4%s
+D s-crtl.ads		20240522120902 beb39b9e system.crtl%s
+D s-exctab.ads		20240522120902 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240522120902 dc5161d4 system.file_control_block%s
+D s-finroo.ads		20240522120902 4ff27390 system.finalization_root%s
+D s-imagei.ads		20240522120902 5e131ce0 system.image_i%s
+D s-imgint.ads		20240522120902 67e4edfb system.img_int%s
+D s-linux.ads		20240522120902 34850a8c system.linux%s
+D s-multip.ads		20240522120902 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20240522120902 0a1d1474 system.os_constants%s
+D s-osinte.ads		20240522120902 e4f53740 system.os_interface%s
+D s-parame.ads		20240522120902 3597fc11 system.parameters%s
+D s-putima.ads		20240522120902 17291fe4 system.put_images%s
+D s-secsta.ads		20240522120902 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240522120902 df77073e system.soft_links%s
+D s-stache.ads		20240522120902 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20240522120902 5be75682 system.stack_usage%s
+D s-stalib.ads		20240522120902 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240522120902 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20240522120902 528dde74 system.task_info%s
+D s-taspri.ads		20240522120902 4ec891e7 system.task_primitives%s
+D s-taprop.ads		20240522120902 6eefbe12 system.task_primitives.operations%s
+D s-taskin.ads		20240522120902 ebc4edbe system.tasking%s
+D s-taprob.ads		20240522120902 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20240522120902 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20240522120902 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20240522120902 cca55c94 system.tasking.stages%s
+D s-traent.ads		20240522120902 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240522120902 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20240522120902 b0fcd073 system.val_spec%s
+D s-vaispe.ads		20240522120902 8280550e system.value_i_spec%s
+D s-vauspe.ads		20240522120902 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20240522120902 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20240522120902 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20240522120902 d9032363 system.wch_con%s
+G a e
+G c Z s b [diningphilosophers philosophers 3 19 none]
+X 1 ada.ads
+16K9*Ada 20e8 17|1r6 1r23
+X 11 a-textio.ads
+58K13*Text_IO 785e16 17|1w10 1r27
+565U14*Put_Line 17|60s41 64s49 67s57 71s65 74s65 76s65 79s65 82s65
+X 16 philosophers.ads
+1K9*Philosophers 5l5 5e17 17|3b14 101l5 101t17
+3U19*DiningPhilosophers 3>38 3>64 17|5b19 99l13 99t31
+3i38 NoPhilosophers{positive} 17|5b38 39r52 54r50 93r59 96r24
+3i64 NoMeals{positive} 17|5b64 97r42
+X 17 philosophers.adb
+7W32 Fork 12E25 13l21 13e25 15b32 37l21 37t25 39r71
+8U35 TryPick 8>43 8<68 16b35 24l29 24t36 61s51 68s71
+8i43 PhilosopherID{positive} 16b43 22r50
+8b68 Success{boolean} 16b68 19m41 21m41
+9U35 Put 9>39 26b35 31l29 31t32 77s79 80s75 83s75 86s67
+9i39 PhilosopherID{positive} 26b39 28r44
+10V34 IsTaken{boolean} 33b34 36l29 36t36 59s50 66s70
+12i25 Owner=26:25{natural} 18r36 22r41 28r36 29r41 35r40
+39a17 Forks(7W32) 59r40 61r41 66r56 68r57 77r65 80r65 83r65 86r57
+41T27 Philosopher 43l21 43e32 45b27 91l21 91t32 93r78
+42Y31 Setup 42>37 42>62 52b32 56l29 56t34 97s33
+42i37 PhilosopherID{positive} 53r39
+42i62 PhilosopherMaxMeals{positive} 55r45
+46i25 ID{positive} 53m33 54r43 59r46 60r67 61r47 61r59 64r75 67r83 68r79
+. 71r91 74r91 76r91 77r83 79r91 80r71 80r79 82r91 83r71 83r79 86r63 86r71
+47i25 NextID{positive} 54m33 66r62 68r63 77r71
+48i25 MaxMeals{positive} 55m33 58r44
+49i25 MealsEaten{natural} 58r31 73m65 73r79 74r123
+50b25 Success{boolean} 61m63 63r44 68m83 70r60
+52i38 PhilosopherID{positive}
+52i63 PhilosopherMaxMeals{positive}
+93a17 Philosophers(41T27) 97r17
+96i16 I{integer} 97r30 97r39
+X 38 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+

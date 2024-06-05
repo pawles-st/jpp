@@ -1,0 +1,73 @@
+V "GNAT Lib v14"
+M P W=b
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_SECONDARY_STACK
+
+U diningtest%b		diningtest.adb		6c159606 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W philosophers%s	philosophers.adb	philosophers.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+
+D ada.ads		20240522120902 76789da1 ada%s
+D a-comlin.ads		20240522120902 4aa66568 ada.command_line%s
+D a-except.ads		20240522120902 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20240522120902 40018c65 ada.io_exceptions%s
+D a-stream.ads		20240522120902 119b8fb3 ada.streams%s
+D a-string.ads		20240522120902 90ac6797 ada.strings%s
+D a-sttebu.ads		20240522120902 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240522120902 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240522120902 9eaa38c6 ada.tags%s
+D a-textio.ads		20240522120902 34ef47de ada.text_io%s
+D a-unccon.ads		20240522120902 0e9b276f ada.unchecked_conversion%s
+D diningtest.adb	20240605201920 af60d8cd diningtest%b
+D interfac.ads		20240522120902 9111f9c1 interfaces%s
+D i-cstrea.ads		20240522120902 ffd01b9d interfaces.c_streams%s
+D philosophers.ads	20240605201220 bd3c6c7d philosophers%s
+D system.ads		20240522120902 14286b0f system%s
+D s-crtl.ads		20240522120902 beb39b9e system.crtl%s
+D s-exctab.ads		20240522120902 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240522120902 dc5161d4 system.file_control_block%s
+D s-parame.ads		20240522120902 3597fc11 system.parameters%s
+D s-putima.ads		20240522120902 17291fe4 system.put_images%s
+D s-secsta.ads		20240522120902 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240522120902 df77073e system.soft_links%s
+D s-stache.ads		20240522120902 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240522120902 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240522120902 ccded4e8 system.storage_elements%s
+D s-traent.ads		20240522120902 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240522120902 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20240522120902 8bab724f system.val_int%s
+D s-valspe.ads		20240522120902 b0fcd073 system.val_spec%s
+D s-valuns.ads		20240522120902 f7ddb71d system.val_uns%s
+D s-valuei.ads		20240522120902 d9377ca5 system.value_i%s
+D s-vaispe.ads		20240522120902 8280550e system.value_i_spec%s
+D s-valueu.ads		20240522120902 a38d32a6 system.value_u%s
+D s-vauspe.ads		20240522120902 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20240522120902 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20240522120902 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20240522120902 d9032363 system.wch_con%s
+G a e
+G c Z b b [diningtest standard 5 11 none]
+G r c none [diningtest standard 5 11 none] [diningphilosophers philosophers 3 19 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r23 2r6 2r28
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 12|2w10 2r32
+39V13*Argument_Count{natural} 12|7s12
+52V13*Argument{string} 12|8s51 8s80
+X 10 a-textio.ads
+58K13*Text_IO 785e16 12|1w10 1r27
+565U14*Put_Line 12|10s17
+X 12 diningtest.adb
+5U11*DiningTest 5b11 12l5 12t15
+X 15 philosophers.ads
+1K9*Philosophers 12|3w6 3r24 15|5e17
+3U19*DiningPhilosophers 12|8s17
+
