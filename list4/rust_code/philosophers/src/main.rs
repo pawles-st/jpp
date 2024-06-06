@@ -28,16 +28,23 @@ impl Philosopher {
 
     fn eat(&mut self, table: &Table) {
         while self.meals_eaten < self.max_meals {
+            println!("philisopher {} is trying to pick up left fork", self.id);
             match table.forks[self.left_fork].try_lock() {
                 Ok(left_fork) => {
+                    println!("philisopher {} picked up left fork", self.id);
+                    println!("philisopher {} is trying to pick up right fork", self.id);
                     match table.forks[self.right_fork].try_lock() {
                         Ok(right_fork) => {
+                            println!("philisopher {} picked up right fork", self.id);
                             self.meals_eaten += 1;
                             println!("philisopher {} is eating meal nr {}", self.id, self.meals_eaten);
+                            println!("philisopher {} is putting down right fork", self.id);
                             drop(right_fork);
+                            println!("philisopher {} is putting down right fork", self.id);
                             drop(left_fork);
                         },
                         Err(_) => {
+                            println!("philisopher {} is putting down left fork: BUSY", self.id);
                             drop(left_fork)
                         },
                     }

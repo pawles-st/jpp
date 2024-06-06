@@ -79,7 +79,7 @@ package body Philosophers is
 								Put_Line ("Philosopher" & Id'Img & " is putting down left fork");
 								Forks(ID).Put(ID);
 							else
-								Put_Line ("Philosopher" & Id'Img & " released left fork");
+								Put_Line ("Philosopher" & Id'Img & " is putting down left fork: BUSY");
 								Forks(ID).Put(ID);
 							end if;
 						else 

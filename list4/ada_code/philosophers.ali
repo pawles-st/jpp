@@ -20,7 +20,7 @@ RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U philosophers%b	philosophers.adb	ba15679c NE OO PK
+U philosophers%b	philosophers.adb	14a8c3ef NE OO PK
 W ada%s			ada.ads			ada.ali
 Z ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -58,7 +58,7 @@ D interfac.ads		20240522120902 9111f9c1 interfaces%s
 D i-c.ads		20240522120902 aac316ce interfaces.c%s
 D i-cstrea.ads		20240522120902 ffd01b9d interfaces.c_streams%s
 D philosophers.ads	20240605201220 bd3c6c7d philosophers%s
-D philosophers.adb	20240605202211 33c64c3f philosophers%b
+D philosophers.adb	20240606151012 9d7be84c philosophers%b
 D system.ads		20240522120902 14286b0f system%s
 D s-atacco.ads		20240522120902 5868e3ba system.address_to_access_conversions%s
 D s-atopri.ads		20240522120902 e19c1d89 system.atomic_primitives%s

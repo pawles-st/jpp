@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 import "sync"
+import "os"
+import "strconv"
 
 type Philosopher struct {
 	id int
@@ -28,7 +30,7 @@ func (p *Philosopher) eat(noMeals int, noPhilosophers int, wg *sync.WaitGroup) {
 				fmt.Printf("Philosopher %d putting down left fork\n", p.id)
 				p.leftFork.Unlock()
 			} else {
-				fmt.Printf("Philosopher %d putting down left fork\n", p.id)
+				fmt.Printf("Philosopher %d putting down left fork: BUSY\n", p.id)
 				p.leftFork.Unlock()
 			}
 		}
@@ -36,8 +38,12 @@ func (p *Philosopher) eat(noMeals int, noPhilosophers int, wg *sync.WaitGroup) {
 }
 
 func main() {
-	noPhilosophers := 5
-	noMeals := 100
+	if len(os.Args) != 3 {
+		os.Exit(1);
+	}
+
+	noPhilosophers, _ := strconv.Atoi(os.Args[1])
+	noMeals, _ := strconv.Atoi(os.Args[2])
 
 	forks := make([]*sync.Mutex, noPhilosophers)
 	for i := 0; i < noPhilosophers; i++ {
